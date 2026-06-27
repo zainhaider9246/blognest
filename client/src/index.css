@@ -1,0 +1,125 @@
+/* ── BlogNest Global Styles ── */
+:root {
+  --bn-primary: #4f46e5;
+  --bn-primary-hover: #4338ca;
+  --bn-accent: #f59e0b;
+  --bn-radius: 12px;
+  --bn-transition: 0.2s ease;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  transition: background-color var(--bn-transition), color var(--bn-transition);
+}
+
+/* ── Navbar ── */
+.bn-navbar {
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+[data-bs-theme="dark"] .bn-navbar {
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+.bn-brand {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--bn-primary) !important;
+  letter-spacing: -0.5px;
+}
+
+/* ── Cards ── */
+.bn-card {
+  border-radius: var(--bn-radius);
+  border: 1px solid rgba(0,0,0,0.07);
+  transition: transform var(--bn-transition), box-shadow var(--bn-transition);
+  overflow: hidden;
+}
+.bn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(79,70,229,0.12);
+}
+[data-bs-theme="dark"] .bn-card {
+  border-color: rgba(255,255,255,0.08);
+}
+
+.bn-card-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ── Category badge ── */
+.bn-badge {
+  background: rgba(79,70,229,0.1);
+  color: var(--bn-primary);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  background-color: var(--bn-primary) !important;
+  border-color: var(--bn-primary) !important;
+}
+.btn-primary:hover {
+  background-color: var(--bn-primary-hover) !important;
+  border-color: var(--bn-primary-hover) !important;
+}
+
+/* ── Hero ── */
+.bn-hero {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  padding: 80px 0;
+  color: white;
+}
+
+/* ── Post detail ── */
+.bn-post-content {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  white-space: pre-wrap;
+}
+
+.bn-cover-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--bn-radius);
+}
+
+/* ── Avatar ── */
+.bn-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bn-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* ── Search bar ── */
+.bn-search {
+  border-radius: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ── Like button ── */
+.bn-like-btn.liked {
+  color: #ef4444 !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bn-primary); border-radius: 3px; }
