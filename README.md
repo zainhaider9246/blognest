@@ -5,12 +5,7 @@ A full-featured blogging platform built with the **MERN Stack** (MongoDB, Expres
 ---
 
 ## 🚀 Live Demo
-
-> *(Add your deployed links here after hosting)*
-> - **Frontend:** [Netlify / Vercel link]
-> - **Backend:** [Render link]
-
----
+https://blognestprofile.netlify.app/
 
 ## ✨ Features
 
